@@ -1,0 +1,108 @@
+        /* Gaya CSS untuk kotak */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .center-box {
+            display: flex;
+            background-color: #ffffff; /* Warna latar belakang */
+            border-radius: 10px; /* Mengatur sudut tumpul */
+            width: 550px; /* Lebar kotak */
+            height: 400px;
+        }
+
+        .left {
+            flex: 1;
+            flex-basis: 50%; /* Memecah kotak menjadi 50% lebar */
+            padding: 0; /* Menghapus padding */
+            overflow: hidden; /*biar gambar ga kluar2*/
+            position: relative; 
+        }
+
+        .right {
+            flex: 2;
+            flex-basis: 50%; /* Memecah kotak menjadi 50% lebar */
+            padding: 20px; /* Menambahkan padding */
+            display: flex;
+            flex-direction: column; /* Mengatur tata letak elemen teks menjadi tumpukan vertikal */
+            justify-content: space-between; /* Menyusun teks secara vertikal */
+        }
+
+        .image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+
+        .text_prodName,
+        .text_priceNew,
+        .text_price,
+        .text_product,
+        .text_descProd,
+        .AddBtn {
+            margin: 0; /* Menghapus margin default untuk teks */
+        }
+
+        /* Menambahkan spasi antara elemen teks */
+        .text_priceNew,
+        .text_price,
+        .text_product,
+        .text_descProd {
+            margin-bottom: 20px;
+        }
+
+        /* Mengatur warna dan ukuran teks */
+        .text_prodName {
+            font-size: 36px;
+            font-weight: bold;
+            position: relative;
+            color: #333;
+        }
+
+        .text_priceNew {
+            font-size: 30px;
+            font-weight: bold;
+            color: #000000;
+            position:relative;
+            top: 15px;
+        }
+
+        .text_price {
+            font-size: 18px;
+            color: #777;
+            position:relative;
+            left: 95px;
+            bottom: 50px;
+        }
+
+        .text_product {
+            font-size: 20px;
+            color: #000000;
+            position: relative;
+            top: 5px;
+        }
+
+        .text_descProd {
+            font-size: 16px;
+            color: #333;
+            position: relative;
+            top: 15px;
+        }
+
+        .AddBtn {
+            font-size: 14px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #3D8168;
+            padding: 8px 10px;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 10px;
+            position: relative;
+            bottom: 65px;
+        }
